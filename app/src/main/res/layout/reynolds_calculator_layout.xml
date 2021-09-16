@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NÚMERO DE REYNOLDS"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/reynolds"
+            android:scaleType="fitCenter"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="monospace"
+                android:textSize="16sp"
+                android:text="Densidade (kg/m³):"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/reynolds_calculator_density_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:digits=",.0123456789"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="monospace"
+                android:textSize="16sp"
+                android:text="Viscosidade (N.s/m²):"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/reynolds_calculator_viscosity_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:digits=",.0123456789"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="monospace"
+                android:textSize="16sp"
+                android:text="Vel. escoamento (m/s):"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/reynolds_calculator_velocity_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:digits=",.0123456789"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="monospace"
+                android:textSize="16sp"
+                android:text="Ø tubulação(m):"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/reynolds_calculator_diameter_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:digits=",.0123456789"></EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:weightSum="2">
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/reynolds_calculator_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:nb_radius="4dp"
+                app:nb_text="CANCELAR"
+                app:nb_textStyle="bold"
+                app:nb_textColor="@color/white"
+                app:nb_backgroundColor="@android:color/holo_red_dark">
+
+            </com.ornach.nobobutton.NoboButton>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/reynolds_calculator_confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:nb_radius="4dp"
+                app:nb_text="CONFIRMAR"
+                app:nb_textStyle="bold"
+                app:nb_textColor="@color/white"
+                app:nb_backgroundColor="@android:color/holo_green_dark">
+
+            </com.ornach.nobobutton.NoboButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

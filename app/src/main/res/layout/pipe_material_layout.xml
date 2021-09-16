@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECIONAR MATERIAL"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/select_material_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"></Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rugosidade (mm):"
+                android:fontFamily="monospace"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/select_material_roughness_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:fontFamily="monospace"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:weightSum="2">
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/select_material_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:nb_radius="4dp"
+                app:nb_text="CANCELAR"
+                app:nb_textStyle="bold"
+                app:nb_textColor="@color/white"
+                app:nb_backgroundColor="@android:color/holo_red_dark">
+
+            </com.ornach.nobobutton.NoboButton>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/select_material_confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:nb_radius="4dp"
+                app:nb_text="CONFIRMAR"
+                app:nb_textStyle="bold"
+                app:nb_textColor="@color/white"
+                app:nb_backgroundColor="@android:color/holo_green_dark">
+
+            </com.ornach.nobobutton.NoboButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

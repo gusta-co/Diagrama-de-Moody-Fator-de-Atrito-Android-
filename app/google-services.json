@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733385979478",
+    "project_id": "app---diagrama-de-moody",
+    "storage_bucket": "app---diagrama-de-moody.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733385979478:android:57e4aa7ddb96b17cee6df7",
+        "android_client_info": {
+          "package_name": "com.e.diagramademoody_fatordeatrito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733385979478-f0hireprdp6p92ahqupg9dpbticn0bfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsEtQu8NQ2rsTtezOCrPZ-kAWu1NPDXsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733385979478-f0hireprdp6p92ahqupg9dpbticn0bfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

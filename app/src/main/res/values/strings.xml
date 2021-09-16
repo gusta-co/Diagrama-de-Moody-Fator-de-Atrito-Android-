@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Diagrama de Moody - Fator de Atrito</string>
+    <string name="ad_unit_ID">ca-app-pub-9314057001634497~7141909376</string>
+
+    <string-array name="pipe_dimensions">
+        <item>mm</item>
+        <item>pol</item>
+    </string-array>
+
+    <string-array name="pipe_material">
+        <item>Aço Comercial</item>
+        <item>Aço Enferrujado</item>
+        <item>Aço Inox</item>
+        <item>Aço Rebitado</item>
+        <item>Cobre</item>
+        <item>Ferro Forjado</item>
+        <item>Ferro Fundido</item>
+        <item>Plástico</item>
+        <item>PVC</item>
+        <item>Vidro</item>
+    </string-array>
+
+
+    <string-array name="pipe_material_roughness">
+        <item>0.046</item>
+        <item>2</item>
+        <item>0.002</item>
+        <item>3</item>
+        <item>0.002</item>
+        <item>0.046</item>
+        <item>0.26</item>
+        <item>0.0015</item>
+        <item>0.015</item>
+        <item>0.00000001</item>
+    </string-array>
+
+</resources>
